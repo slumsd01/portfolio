@@ -1,0 +1,39 @@
+:root {
+    --white: #fff;
+    --blackshadows: #bbb4b5;
+    --linen: #ffede6;
+    --darkcornflowerblue: #3a467d;
+    --beaublue: #d3e5f3;
+}
+
+header {
+    background-color: var(--linen);
+    color: var(--darkcornflowerblue);
+    text-align: center;
+    padding: 0 0 1px;
+}
+.header-img {
+    height: 150px;
+    width: 100%;
+    background-image: url(../images/header-img.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+h1 {
+    border-bottom: 2px solid var(--darkcornflowerblue);
+    padding: 0px 0 20px;
+    text-transform: uppercase;
+    font-size: 42px;
+    display: inline-flex;
+    width: 70%;
+    justify-content: center;
+    margin: 28px 28px 0;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+    padding: 0
+}
