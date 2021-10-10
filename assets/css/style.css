@@ -1,3 +1,7 @@
+* {
+    color: var(--darkcornflowerblue);
+}
+
 :root {
     --white: #fff;
     --blackshadows: #bbb4b5;
@@ -6,12 +10,12 @@
     --beaublue: #d3e5f3;
 }
 
-header {
+header, .recent-works {
     background-color: var(--linen);
-    color: var(--darkcornflowerblue);
     text-align: center;
-    padding: 0 0 1px;
+    padding: 0 0 15px;
 }
+
 .header-img {
     height: 150px;
     width: 100%;
@@ -25,15 +29,92 @@ h1 {
     padding: 0px 0 20px;
     text-transform: uppercase;
     font-size: 42px;
-    display: inline-flex;
+    display: inline-block;
     width: 70%;
     justify-content: center;
     margin: 28px 28px 0;
 }
 
 nav ul {
+    font-family: sans-serif;
+    text-transform: uppercase;
     display: flex;
     justify-content: space-evenly;
     list-style-type: none;
     padding: 0
+}
+
+.about {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.about img {
+    width: 250px;
+    border-top: 10px solid;
+    border-left: 100px solid;
+    border-right: 10px solid;
+    border-bottom: 10px solid;
+}
+
+.biography {
+    flex: 1;
+}
+
+.biography h3 {
+    text-transform: uppercase;
+    background-color: var(--darkcornflowerblue);
+    color: var(--white);
+    padding: 5px 0 5px 40px;
+    margin-bottom: 0px;
+}
+
+.biography p {
+    text-align: justify;
+    padding: 0 100px 0 40px;
+}
+
+.recent-works h2 {
+    text-transform: uppercase;
+    margin-top: 0;
+    padding-top: 30px;
+}
+
+.recent-works img {
+    width: 600px;
+    border:10px solid var(--white)
+}
+
+.project {
+    display: inline-block;
+}
+
+.project p {
+    font-family: sans-serif;
+    text-transform: uppercase;
+    background-color: var(--darkcornflowerblue);
+    color: var(--white);
+    margin: 0;
+    padding: 5px;
+    width: fit-content;
+    position: relative;
+    top: -32px;    
+}
+
+.project img {
+    width: 600px;
+    border:10px solid var(--white);
+}
+
+.project p {
+    font-family: sans-serif;
+    text-transform: uppercase;
+    background-color: var(--darkcornflowerblue);
+    color: var(--white);
+    margin: 0;
+    padding: 5px;
+    width: fit-content;
+    position: relative;
+    top: -32px;
 }
