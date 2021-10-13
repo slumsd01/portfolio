@@ -13,7 +13,7 @@
 header, .recent-works {
     background-color: var(--linen);
     text-align: center;
-    padding: 0 0 15px;
+    padding: 0 0 30px;
 }
 
 .header-img {
@@ -26,7 +26,7 @@ header, .recent-works {
 
 h1 {
     border-bottom: 2px solid var(--darkcornflowerblue);
-    padding: 0px 0 20px;
+    padding: 18px 0 20px;
     text-transform: uppercase;
     font-size: 42px;
     display: inline-block;
@@ -53,8 +53,8 @@ nav ul {
 .about img {
     width: 250px;
     border-top: 10px solid;
-    border-left: 100px solid;
-    border-right: 10px solid;
+    border-left: 371px solid;
+    border-right: 30px solid;
     border-bottom: 10px solid;
 }
 
@@ -78,19 +78,31 @@ nav ul {
 .recent-works h2 {
     text-transform: uppercase;
     margin-top: 0;
-    padding-top: 30px;
+    padding: 50px 0 20px 0;
 }
 
-.recent-works img {
-    width: 600px;
-    border:10px solid var(--white)
+#featured-project img {
+    width: 850px;
+    border:10px solid var(--white);
 }
 
-.project {
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.small-project img {
+    width: 350px;
+    border:10px solid var(--white);
+    margin: -5px 15px;
+}
+
+#featured-project, .small-project {
     display: inline-block;
 }
 
-.project p {
+.recent-works p {
     font-family: sans-serif;
     text-transform: uppercase;
     background-color: var(--darkcornflowerblue);
@@ -102,19 +114,7 @@ nav ul {
     top: -32px;    
 }
 
-.project img {
-    width: 600px;
-    border:10px solid var(--white);
-}
-
-.project p {
-    font-family: sans-serif;
-    text-transform: uppercase;
-    background-color: var(--darkcornflowerblue);
-    color: var(--white);
-    margin: 0;
-    padding: 5px;
-    width: fit-content;
-    position: relative;
-    top: -32px;
+.small-project p {
+    top: -28px;
+    left: 15px;
 }
