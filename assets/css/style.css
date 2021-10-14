@@ -44,6 +44,18 @@ nav ul {
     padding: 0
 }
 
+nav a {
+    text-decoration: none;
+}
+
+nav a:hover {
+    background: var(--darkcornflowerblue);
+    color: white;
+    margin: auto;
+    border: 7px solid var(--darkcornflowerblue);
+    margin: -7px;
+}
+
 .about {
     display: flex;
     flex-wrap: wrap;
@@ -87,6 +99,10 @@ h2 {
     padding: 50px 0 25px 0;
 }
 
+#featured-project, .small-project {
+    display: inline-block;
+}
+
 #featured-project img {
     width: 850px;
     border:10px solid var(--white);
@@ -104,20 +120,26 @@ h2 {
     margin: -5px 15px;
 }
 
-#featured-project, .small-project {
-    display: inline-block;
-}
-
 .recent-works p {
     font-family: sans-serif;
     text-transform: uppercase;
     background-color: var(--darkcornflowerblue);
     color: var(--white);
     margin: 0;
-    padding: 5px;
+    padding: 5px 10px;
     width: fit-content;
     position: relative;
-    top: -32px;    
+    top: -42px;
+}
+
+.recent-works span {
+    text-transform: none;
+    color: var(--white);
+    opacity: 0.5;
+}
+
+#featured-project p {
+    font-size: x-large;
 }
 
 .small-project p {
@@ -150,9 +172,30 @@ h2 {
     text-transform: uppercase;
     font-family: sans-serif;
     font-weight: lighter;
+    font-size: large;
 }
 
 .contact p {
     color: var(--white);
     margin-top: -15px;
+}
+
+footer {
+    background-color: var(--blackshadows);
+}
+
+.credits li {
+    color:var(--white);
+    margin: 0 10px;
+}
+
+ul.credits {
+    font-family: sans-serif;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    font-size: small;
+    margin: auto;
+    padding: 10px;
 }
