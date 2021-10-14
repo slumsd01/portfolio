@@ -53,7 +53,7 @@ nav ul {
 .about img {
     width: 250px;
     border-top: 10px solid;
-    border-left: 371px solid;
+    border-left: 400px solid;
     border-right: 30px solid;
     border-bottom: 10px solid;
 }
@@ -64,6 +64,8 @@ nav ul {
 
 .biography h3 {
     text-transform: uppercase;
+    font-family: sans-serif;
+    font-weight: lighter;
     background-color: var(--darkcornflowerblue);
     color: var(--white);
     padding: 5px 0 5px 40px;
@@ -75,10 +77,14 @@ nav ul {
     padding: 0 100px 0 40px;
 }
 
-.recent-works h2 {
+h2 {
     text-transform: uppercase;
-    margin-top: 0;
-    padding: 50px 0 20px 0;
+    font-size: xx-large;
+    margin: auto;
+}
+
+.recent-works h2 {
+    padding: 50px 0 25px 0;
 }
 
 #featured-project img {
@@ -117,4 +123,36 @@ nav ul {
 .small-project p {
     top: -28px;
     left: 15px;
+}
+
+.contact-header {
+    display: flex;
+    align-items: center;
+}
+
+.contact-img {
+    height: 200px;
+    width: 500px;
+    background-image: url(../images/contact-img.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.contact {
+    display: flex;
+    justify-content: space-evenly;
+    background: var(--darkcornflowerblue);
+    padding: 15px 0;
+}
+
+.contact h4 {
+    color: var(--white);
+    text-transform: uppercase;
+    font-family: sans-serif;
+    font-weight: lighter;
+}
+
+.contact p {
+    color: var(--white);
+    margin-top: -15px;
 }
