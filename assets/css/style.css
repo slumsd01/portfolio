@@ -51,9 +51,9 @@ nav a {
 nav a:hover {
     background: var(--darkcornflowerblue);
     color: white;
-    margin: auto;
-    border: 7px solid var(--darkcornflowerblue);
-    margin: -7px;
+    border: 10px solid var(--darkcornflowerblue);
+    border-radius: 10px;
+    margin: -10px;
 }
 
 .about {
@@ -64,14 +64,13 @@ nav a:hover {
 
 .about img {
     width: 250px;
-    border-top: 10px solid;
-    border-left: 400px solid;
-    border-right: 30px solid;
-    border-bottom: 10px solid;
+    margin: 0 0 0 400px;
+    border: 10px solid;
 }
 
 .biography {
     flex: 1;
+    margin: 0 400px 0 0;
 }
 
 .biography h3 {
@@ -81,7 +80,6 @@ nav a:hover {
     background-color: var(--darkcornflowerblue);
     color: var(--white);
     padding: 5px 0 5px 40px;
-    margin-bottom: 0px;
 }
 
 .biography p {
@@ -103,9 +101,17 @@ h2 {
     display: inline-block;
 }
 
+.recent-works img {
+    border: 10px solid var(--white);
+    opacity: 0.7;
+}
+
+.recent-works img:hover {
+    opacity: 1;
+}
+
 #featured-project img {
     width: 850px;
-    border:10px solid var(--white);
 }
 
 .projects {
@@ -116,7 +122,6 @@ h2 {
 
 .small-project img {
     width: 350px;
-    border:10px solid var(--white);
     margin: -5px 15px;
 }
 
@@ -164,7 +169,24 @@ h2 {
     display: flex;
     justify-content: space-evenly;
     background: var(--darkcornflowerblue);
-    padding: 15px 0;
+    padding: 20px;
+    text-align: center;
+}
+
+.contact a {
+    padding: 20px;
+    text-decoration: none;
+}
+
+.contact a:hover {
+    background: var(--linen);
+    border: 10px solid var(--linen);
+    border-radius: 10px;
+    margin: -10px;
+}
+
+.contact a:hover h4, .contact a:hover p {
+    color: var(--darkcornflowerblue);
 }
 
 .contact h4 {
@@ -184,12 +206,12 @@ footer {
     background-color: var(--blackshadows);
 }
 
-.credits li {
+footer li {
     color:var(--white);
     margin: 0 10px;
 }
 
-ul.credits {
+footer ul {
     font-family: sans-serif;
     text-transform: uppercase;
     display: flex;
@@ -198,4 +220,12 @@ ul.credits {
     font-size: small;
     margin: auto;
     padding: 10px;
+}
+
+footer ul a {
+    color: var(--white);
+}
+
+footer ul a:hover {
+    color: var(--darkcornflowerblue);
 }
