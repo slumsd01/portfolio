@@ -84,7 +84,7 @@ nav a:hover {
 
 .biography p {
     text-align: justify;
-    padding: 0 100px 0 40px;
+    padding: 0 40px;
 }
 
 h2 {
@@ -115,8 +115,7 @@ h2 {
 }
 
 .projects {
-    display: flex;
-    flex-wrap: nowrap;
+    display: inline-flex;
     justify-content: center;
 }
 
@@ -214,6 +213,7 @@ footer li {
 footer ul {
     font-family: sans-serif;
     text-transform: uppercase;
+    text-align: center;
     display: flex;
     justify-content: center;
     list-style-type: none;
@@ -244,4 +244,48 @@ footer ul a:hover {
     div.small-project img {
         width:250px
     }
+}
+
+@media only screen and (max-width: 950px) {
+    .about {
+        display:block;
+        text-align:center;
+    }
+
+    .about img {
+        display:block;
+        margin:auto;
+    }
+
+    .biography {
+        margin:-15px 0 0 0;
+    }
+
+    #featured-project img {
+        width:450px;
+    }
+
+   .projects {
+        display:inline-flex;
+        flex-wrap:wrap;
+   }
+
+    .small-project p {
+        position: relative;
+        top: -37px;
+        left: 5px;
+    }
+
+   .projects img {
+       width: 500px;
+       margin:5px;
+   }
+
+   .contact-img {
+       display:none;
+   }
+
+   .contact-header {
+       padding:50px 0;
+   }
 }
