@@ -28,7 +28,6 @@ h1 {
     border-bottom: 2px solid var(--darkcornflowerblue);
     padding: 18px 0 20px;
     text-transform: uppercase;
-    font-size: 42px;
     display: inline-block;
     width: 70%;
     justify-content: center;
@@ -41,7 +40,7 @@ nav ul {
     display: flex;
     justify-content: space-evenly;
     list-style-type: none;
-    padding: 0
+    padding: 0;
 }
 
 nav a {
@@ -63,14 +62,14 @@ nav a:hover {
 }
 
 .about img {
-    height: 400px;
+    height: 300px;
     margin: 0 0 0 400px;
     border: 10px solid;
 }
 
 .biography {
     flex: 1;
-    margin: 0 400px 0 0;
+    margin: 0 300px 0 0;
 }
 
 .biography h3 {
@@ -89,7 +88,6 @@ nav a:hover {
 
 h2 {
     text-transform: uppercase;
-    font-size: xx-large;
     margin: auto;
 }
 
@@ -111,17 +109,18 @@ h2 {
 }
 
 #featured-project img {
-    width: 850px;
+    width: 800px;
 }
 
 .projects {
     display: inline-flex;
     justify-content: center;
+    flex-wrap:wrap;
 }
 
 .small-project img {
-    width: 350px;
-    margin: -5px 15px;
+    width: 400px;
+    margin: 10px;
 }
 
 .recent-works p {
@@ -129,11 +128,12 @@ h2 {
     text-transform: uppercase;
     background-color: var(--darkcornflowerblue);
     color: var(--white);
-    margin: 0;
+    margin:-15px;
     padding: 5px 10px;
     width: fit-content;
     position: relative;
-    top: -42px;
+    top: -20px;
+    left:15px
 }
 
 .recent-works span {
@@ -143,17 +143,16 @@ h2 {
 }
 
 #featured-project p {
-    font-size: x-large;
+    font-size: large;
 }
 
 .small-project p {
-    top: -28px;
-    left: 15px;
+    top: -27px;
+    left: 25px;
 }
 
 .contact-header {
     display: flex;
-    align-items: center;
 }
 
 .contact-img {
@@ -193,7 +192,6 @@ h2 {
     text-transform: uppercase;
     font-family: sans-serif;
     font-weight: lighter;
-    font-size: large;
 }
 
 .contact p {
@@ -214,10 +212,10 @@ footer ul {
     font-family: sans-serif;
     text-transform: uppercase;
     text-align: center;
+    font-size:small;
     display: flex;
     justify-content: center;
     list-style-type: none;
-    font-size: small;
     margin: auto;
     padding: 10px;
 }
@@ -230,62 +228,26 @@ footer ul a:hover {
     color: var(--darkcornflowerblue);
 }
 
-@media only screen and (max-width: 1500px) {
-    .about img {
-        margin:0;
-    }
-
-    .biography {
-        margin: 0;
-    }
-}
-
-@media only screen and (max-width: 1200px) {
-    div.small-project img {
-        width:250px
-    }
-}
-
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-device-width: 1500px) {
     .about {
         display:block;
         text-align:center;
     }
 
     .about img {
-        display:block;
         margin:auto;
+        margin-bottom:-20px
     }
 
     .biography {
-        margin:-15px 0 0 0;
+        margin:auto;
     }
 
-    #featured-project img {
-        width:450px;
+    .biography p {
+        margin-bottom:30px;
     }
-
-   .projects {
-        display:inline-flex;
-        flex-wrap:wrap;
-   }
-
-    .small-project p {
-        position: relative;
-        top: -37px;
-        left: 5px;
+    
+    .contact-img {
+        width:400px;
     }
-
-   .projects img {
-       width: 500px;
-       margin:5px;
-   }
-
-   .contact-img {
-       display:none;
-   }
-
-   .contact-header {
-       padding:50px 0;
-   }
 }
