@@ -6,15 +6,6 @@
     --beaublue: #d3e5f3;
 }
 
-html,body
-{
-    width: 100%;
-    height: 100%;
-    margin: 0px;
-    padding: 0px;
-    overflow-x: hidden; 
-}
-
 body {
     text-align: center;
 }
@@ -36,6 +27,19 @@ h1 {
     margin:10px auto;
     border-bottom: solid 2px var(--darkcornflowerblue);
     width:75%;
+}
+
+a {
+    color:var(--darkcornflowerblue);
+    text-decoration: none;
+}
+
+header a:hover {
+    color:white;
+    background: var(--darkcornflowerblue);
+    padding: 5px 20px;
+    margin:-5px -20px;
+    border-radius: 10px;
 }
 
 #portrait-container {
@@ -68,17 +72,29 @@ h1 {
     color: var(--darkcornflowerblue);
 }
 
-
-#img{
+.project-img{
     border: solid 3px white;
+    border-radius: 10px;
+    opacity: 0.7;
 }
 
-#project-info {
+.project-info {
     background-color: var(--darkcornflowerblue);
+    border-radius: 0 0 10px 10px;
     margin:0 auto 20px;
+    opacity:0;
 }
 
-#project-info p {
+.project-img:hover + .project-info {
+    opacity:1;
+}
+
+.project-img:hover {
+    border-radius: 10px 10px 0 0;
+    opacity: 1;
+}
+
+.project-info p {
     color:white;
 }
 
@@ -91,8 +107,6 @@ h1 {
     opacity: 0.5;
 }
 
-
-
 #contact {
     margin:10px 20px;
 }
@@ -102,21 +116,31 @@ h1 {
     padding:30px;
 }
 
-#contact-method {
+.contact-method {
     background-color: var(--darkcornflowerblue);
     color:white;
     padding:10px;
     margin:10px 0;
 }
 
-#contact-method p {
+.contact-method p {
     margin:0;
+}
+
+.contact-method:hover {
+    color:var(--darkcornflowerblue);
+    background-color: var(--linen);
+    border-radius: 10px;
 }
 
 footer {
     background-color: var(--blackshadows);
     color: white;
     font-size: 11px;
+}
+
+#credits-container a {
+    color:var(--darkcornflowerblue);
 }
 
 @media only screen and (min-width: 768px) {
@@ -154,11 +178,11 @@ footer {
 }
 
 @media only screen and (min-width: 826px) {
-    #project-info {
+    .project-info {
         max-width: 700px;
     }
 
-    #fig:not(:first-child) {
+    .fig:not(:first-child) {
         max-width: 400px;
     }
 }
