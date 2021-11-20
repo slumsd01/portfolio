@@ -8,6 +8,7 @@ The purpose of this page is to showcase myself and my previous projects, for pot
 ## Built With
 * HTML
 * CSS
+* Bootstrap CSS framework
 
 ## Website
 [Portfolio](https://slumsd01.github.io/portfolio/)
